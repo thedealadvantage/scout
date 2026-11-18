@@ -10,5 +10,5 @@ ADVantage (ADVOS Pro LLC). Scout works only with a Scout license; the plugin alo
 - Scout privacy and subprocessors: https://thedealadvantage.com/scout-privacy
 - Questions: info@thedealadvantage.com
 
-Current version: 0.13.1. Copyright ADVOS Pro LLC. All rights reserved. The files here are provided only
+Current version: 0.13.2. Copyright ADVOS Pro LLC. All rights reserved. The files here are provided only
 for use with a Scout license and may not be copied or modified.

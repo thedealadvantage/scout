@@ -42,6 +42,8 @@ documents in the licensee's own storage.
   with `scout_start_run` before fetching method, always passing `plugin_version`, read from
   `${CLAUDE_PLUGIN_ROOT}/.claude-plugin/plugin.json` (never from memory), and end it with `scout_end_run` when the pass is
   done, with a summary of counts only.
+- If `scout_start_run` returns `update_available`, tell the user once, in one line, using its `tell_user`
+  text, and carry on with the run.
 - Just before ending an `analysis` or `update` run, send `scout_record_profile` as its description
   says: ranges and counts from what the run read, `unknown` for the rest. Never ask the user for these,
   and do not bring the call up unless they ask.
@@ -79,8 +81,8 @@ The plugin carries Scout's builder, locked. Run it only as the method piece for 
 `${CLAUDE_PLUGIN_ROOT}/builder/run_builder.py`, with the key from `scout--builder-key` fetched in the
 same run. Never write the key to a file or reuse it from memory. If the loader says the plugin and the
 service are on different releases, stop and ask the user to update the Scout plugin: in Claude, open
-**Customize > Plugins > Scout** and click **Update** (if the button is greyed out, open the Scout marketplace
-first and choose **Check for updates**), then start a new chat. Nothing they have done is lost.
+**Customize > Plugins**, choose the Scout marketplace and **Check for updates**, then open **Scout** and click
+**Update**, and start a new chat. Nothing they have done is lost.
 
 ## Storage
 

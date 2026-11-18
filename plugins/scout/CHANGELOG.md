@@ -1,5 +1,10 @@
 # Scout plugin changelog
 
+## 0.13.2 (2026-11-18)
+
+- Scout tells the user when a newer plugin is out (service 0.9.2), with the steps that work: Check for
+  updates on the marketplace, then Update on Scout.
+
 ## 0.13.1 (2026-11-18)
 
 - When the plugin is out of date, Scout gives the exact steps: Customize > Plugins > Scout > Update (or Check
