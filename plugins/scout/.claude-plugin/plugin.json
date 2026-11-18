@@ -1,0 +1,14 @@
+{
+  "name": "scout",
+  "version": "0.13.0",
+  "description": "Scout, from The Deal ADVantage: deal-readiness and diligence work on a company's documents, in the licensee's own storage. Method is served at runtime from the Scout service; the contracts builder ships locked and runs only with a key the service issues.",
+  "author": {
+    "name": "ADVOS Pro LLC",
+    "email": "info@thedealadvantage.com",
+    "url": "https://thedealadvantage.com"
+  },
+  "displayName": "Scout",
+  "homepage": "https://thedealadvantage.com",
+  "privacyPolicyUrl": "https://thedealadvantage.com/scout-privacy",
+  "termsOfServiceUrl": "https://thedealadvantage.com/scout-license.pdf"
+}

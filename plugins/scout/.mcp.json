@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "scout": {
+      "type": "http",
+      "url": "https://scout-service.advospro.workers.dev/mcp"
+    }
+  }
+}

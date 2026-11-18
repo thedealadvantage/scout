@@ -1,0 +1,18 @@
+{
+  "name": "the-deal-advantage",
+  "owner": {
+    "name": "ADVOS Pro LLC d/b/a The Deal ADVantage",
+    "email": "info@thedealadvantage.com"
+  },
+  "metadata": {
+    "description": "Scout, deal-readiness software from The Deal ADVantage. Requires a Scout license."
+  },
+  "plugins": [
+    {
+      "name": "scout",
+      "source": "./plugins/scout",
+      "version": "0.13.0",
+      "description": "Scout, from The Deal ADVantage: deal-readiness and diligence work on a company's documents, in your own storage. Requires a Scout license."
+    }
+  ]
+}
