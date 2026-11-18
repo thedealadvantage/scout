@@ -1,5 +1,10 @@
 # Scout plugin changelog
 
+## 0.13.1 (2026-11-18)
+
+- When the plugin is out of date, Scout gives the exact steps: Customize > Plugins > Scout > Update (or Check
+  for updates on the marketplace first). First release delivered through the GitHub marketplace.
+
 ## 0.13.0 (2026-11-18)
 
 - The plugin now carries the Scout connector (`.mcp.json`), so installing it adds the connector: users

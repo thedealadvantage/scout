@@ -78,7 +78,9 @@ state on the user's word alone.
 The plugin carries Scout's builder, locked. Run it only as the method piece for the step says, through
 `${CLAUDE_PLUGIN_ROOT}/builder/run_builder.py`, with the key from `scout--builder-key` fetched in the
 same run. Never write the key to a file or reuse it from memory. If the loader says the plugin and the
-service are on different releases, stop and ask the user to update the Scout plugin.
+service are on different releases, stop and ask the user to update the Scout plugin: in Claude, open
+**Customize > Plugins > Scout** and click **Update** (if the button is greyed out, open the Scout marketplace
+first and choose **Check for updates**), then start a new chat. Nothing they have done is lost.
 
 ## Storage
 
