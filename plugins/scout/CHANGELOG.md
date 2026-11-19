@@ -1,5 +1,21 @@
 # Scout plugin changelog
 
+## 0.15.0 (2026-11-19)
+
+Builder 3.11.0: the Data Room Update redesigned after the firm's own reports, from ADVOS's review of
+the first adopted update against the September and October reports it replaces.
+
+- A cover page (logo, title, company, period, the privileged banner between rules); numbered sections
+  with a green rule; a running header; "Page X of Y"; folder and file counts with thousands separators.
+- Open items as bullets in three groups, New this period first, then Information needed and For your
+  consideration. Each reads: a bold title with the label the company knows ("Revenue concentration
+  (M1)"), what the documents show, then "What would help" in italics, with the item's ID small at the
+  end. The low-effort close is said once for the considerations, not after every one.
+- Register items take a `title` (two to six words); the builder warns when one is missing.
+- On The Deal ADVantage's own engagements (licensee "The Deal ADVantage"), every deliverable shows the TDA
+  name and mark once: no second mark, no method credit, and the firm's own copyright line.
+- The voice check no longer mistakes "US" (the country) for "us".
+
 ## 0.14.6 (2026-11-19)
 
 Builder 3.10.0, from the first adopted monthly update:
