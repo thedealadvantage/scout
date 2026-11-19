@@ -1,5 +1,21 @@
 # Scout plugin changelog
 
+## 0.14.5 (2026-11-19)
+
+Builder 3.9.0 and a new method piece, `scout--adopt`: taking over an engagement begun before Scout.
+
+- `adopt-open-items` imports an Open Items Register workbook kept before Scout. It keeps every ID
+  (including a series such as `OI-C01`), date, priority and resolution, and the old report label. It
+  refuses any status Scout does not use until a person maps it, and flags internal-only items and asks
+  that need rewriting for the company.
+- `scout--adopt`: set the company up from its existing signed privilege agreement, find the last
+  deliverable and the last register (and say when the register is older), import, then reconcile item
+  by item against the last deliverable with the user before the first Scout update. Nothing closes
+  because a later report stopped mentioning it. The old tracker and findings stay as delivered until a
+  Scout rebuild.
+- Also: ShareFile in-place working folder setup and the run-close coverage check (published 19 Nov as
+  method content).
+
 ## 0.14.4 (2026-11-19)
 
 - Owners change a person's role with `scout_set_user_role` (service 0.9.6): member to owner or back, with
