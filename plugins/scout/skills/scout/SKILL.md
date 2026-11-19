@@ -37,6 +37,9 @@ documents in the licensee's own storage.
   company's own folders (its privilege form, its README). It must never go into a call to Scout's
   service: not as the codename, and not in any run summary or feedback. If the codename they offer
   is the real name or obviously points to it, say so briefly and suggest one instead.
+- **Users may name a company either way**, by its real name or its codename. Work out which company
+  they mean from `Scout settings/companies.csv` (and `scout_list_companies` for the codenames), and if
+  two could match, ask. Never make them switch to the codename; only the service calls use it.
 - **On the licensee's side, real names are the default.** Folders, file tags and file names use the
   company's name unless the licensee chose codenames, or both, for the firm or for this company. The
   company log in `Scout settings/companies.csv` is the one place the codename is tied to the real name;
@@ -48,6 +51,9 @@ documents in the licensee's own storage.
   with `scout_start_run` before fetching method, always passing `plugin_version`, read from
   `${CLAUDE_PLUGIN_ROOT}/.claude-plugin/plugin.json` (never from memory), and end it with `scout_end_run` when the pass is
   done, with a summary of counts only.
+- **"What can you do?"** Give a short answer in plain words, then the one-pager: Scout at a glance,
+  https://scout-service.advospro.workers.dev/guide (the workflow, what each step builds, which license
+  includes it, and what to say).
 - **Status questions** ("have we run the analysis on this company?", "when was the last filing pass?")
   are answered from `scout_list_runs`, never from memory or from what is in the folders. Say plainly
   when a run started and never ended.
@@ -90,8 +96,8 @@ The plugin carries Scout's builder, locked. Run it only as the method piece for 
 `${CLAUDE_PLUGIN_ROOT}/builder/run_builder.py`, with the key from `scout--builder-key` fetched in the
 same run. Never write the key to a file or reuse it from memory. If the loader says the plugin and the
 service are on different releases, stop and ask the user to update the Scout plugin: in Claude, open
-**Customize > Plugins**, choose the Scout marketplace and **Check for updates**, then open **Scout** and click
-**Update**, and start a new chat. Nothing they have done is lost.
+**Customize > Plugins**, choose the Scout marketplace, click the **...** menu at its top right and choose
+**Check for updates**, then open **Scout** and click **Update**, and start a new chat. Nothing they have done is lost.
 
 ## Storage
 

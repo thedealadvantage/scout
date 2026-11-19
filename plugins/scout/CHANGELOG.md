@@ -1,5 +1,14 @@
 # Scout plugin changelog
 
+## 0.14.2 (2026-11-19)
+
+- "What can you do?" now ends with the Scout at a glance one-pager (service 0.9.5, `/guide`).
+- Users may name a company by its real name or its codename; Scout works out which from the company
+  log and asks if two could match. Only service calls use the codename.
+- Maintenance runs (Deal Readiness): when the last Deep Dive is three months old or more, Scout recommends
+  a refresh to the user and offers a quarterly reminder for that company.
+- Update steps name where Check for updates lives: the ... menu at the top right of the Scout marketplace.
+
 ## 0.14.1 (2026-11-19)
 
 - If a tool the skill names is missing, Scout says Claude still has the connector's old tool list and
