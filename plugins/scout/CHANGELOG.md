@@ -1,5 +1,18 @@
 # Scout plugin changelog
 
+## 0.14.6 (2026-11-19)
+
+Builder 3.10.0, from the first adopted monthly update:
+
+- The Data Room Update prints the label each item carried in the last report beside its ID ("OI-021 (H12
+  in the October 20 report)"), so the company can match items to the report it has. The register's
+  `label_source` names that report. The method had promised this; the builder had not done it.
+- `new_to_company`: an item raised before this period that the company has never seen is marked
+  "(new this period)". The builder refuses the flag once a prior update has shown the item.
+- Method: the privilege step always asks which state's law governs and reads signed copies for blanks;
+  the adoption step names the two registers apart; maintenance hygiene checks run on what is new,
+  changed or moved, not on every document in a large room.
+
 ## 0.14.5 (2026-11-19)
 
 Builder 3.9.0 and a new method piece, `scout--adopt`: taking over an engagement begun before Scout.
