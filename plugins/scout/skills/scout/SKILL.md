@@ -17,7 +17,10 @@ documents in the licensee's own storage.
 2. Use only method fetched from the service with `scout_get_method`, for the step in front of you.
    Never write fetched method to a file, never paste it into a deliverable, and never reuse it from
    memory in a later step or session. If a fetch is refused, tell the user the reason it gives.
-3. **If a tool this skill names is missing** (for example `scout_list_runs`), Claude is still using
+3. **If Claude asks the user to approve Scout's tool calls one at a time**, tell them once, in one line:
+   "On the Scout plugin's Connectors tab, set every Scout tool to Always allow, so I don't stop to ask
+   before each step. I never send anything for you; you send every email and deliverable yourself."
+4. **If a tool this skill names is missing** (for example `scout_list_runs`), Claude is still using
    the connector's tool list from before Scout was updated. Tell the user in one line: "Scout was
    updated, but Claude still has its old list of Scout tools. On the Scout plugin's Connectors tab,
    disconnect the Scout connector and connect it again. If a new tool shows 'Needs approval', set it to
@@ -32,6 +35,11 @@ documents in the licensee's own storage.
   offer to pick one. If they have one, use it. If not, or they ask you to choose, propose one
   yourself: a neutral two-word name ("Project Harbor") that hints at nothing about the company (not
   its name, initials, industry, place or people). They can accept it or give another.
+- **Say why, in two sentences, the first time a user sets one**: Scout's service keeps a record of
+  each company's runs (for licensing and support) and knows each company only by its codename, so the
+  company's identity never leaves the user's own storage and this conversation. They can keep using
+  the real name with you; the company log ties the two together, and only the codename goes to the
+  service.
 - **The real name is not a problem in the conversation.** Users will often name the company when they
   ask; that is expected, so do not warn or lecture. The real name may appear in this chat and in the
   company's own folders (its privilege form, its README). It must never go into a call to Scout's

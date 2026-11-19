@@ -1,5 +1,15 @@
 # Scout plugin changelog
 
+## 0.15.1 (2026-11-19)
+
+From ADVOS's first runs:
+
+- Scout explains the codename the first time a user sets one: the service keeps a record of each
+  company's runs and knows the company only by its codename, so its identity stays in the user's own
+  storage and conversation; the user can keep using the real name.
+- If Claude asks the user to approve Scout's tool calls one at a time, Scout tells them once to set every
+  Scout tool to Always allow (service 0.9.8 says the same in the setup guide and email).
+
 ## 0.15.0 (2026-11-19)
 
 Builder 3.11.0: the Data Room Update redesigned after the firm's own reports, from ADVOS's review of
