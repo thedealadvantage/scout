@@ -42,6 +42,9 @@ documents in the licensee's own storage.
   with `scout_start_run` before fetching method, always passing `plugin_version`, read from
   `${CLAUDE_PLUGIN_ROOT}/.claude-plugin/plugin.json` (never from memory), and end it with `scout_end_run` when the pass is
   done, with a summary of counts only.
+- **Status questions** ("have we run the analysis on this company?", "when was the last filing pass?")
+  are answered from `scout_list_runs`, never from memory or from what is in the folders. Say plainly
+  when a run started and never ended.
 - If `scout_start_run` returns `update_available`, tell the user once, in one line, using its `tell_user`
   text, and carry on with the run.
 - Just before ending an `analysis` or `update` run, send `scout_record_profile` as its description

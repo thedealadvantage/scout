@@ -1,5 +1,29 @@
 # Scout plugin changelog
 
+## 0.14.0 (2026-11-19)
+
+Builder 3.8.0, service 0.9.3 and method updates from the review against ADVOS's own TDA practice.
+
+- **Signatures:** a typed name or `/s/` counts as signed and is labeled as such in the tracker ("Typed
+  name or /s/, no ink or e-signature seen"). A date is never a signature; the builder refuses a note that
+  treats one as proof. An undated signature is not flagged when the document states an "as of" date.
+- **The Data Room Update's voice:** the builder now refuses timing pressure ("as soon as possible",
+  "urgent"), summonses ("what we would like to discuss") and internal words ("filing service", "run log").
+  The cover email follows the same rules.
+- **Contract Tracker:** "Items to finalize" names the finding each item serves, and on maintenance runs a
+  History tab shows the register's changes, newest first. The analysis workbook colors priorities and
+  carries a color key on its cover.
+- **Run counts:** a duplicate removed under the deletion gate is counted as `removed`, not as remaining in
+  the drop (`check-run --removed`). The pieces had said both.
+- **Status questions** ("have we run the analysis?") are answered from the new `scout_list_runs`.
+- Method: password-protected PDFs tested with `pdfinfo` (owner passwords are not protection) and listed
+  as could-not-read only when they will not open; a filter is a reading order, never a scope; archive
+  files read when their hash matches no active file; a second reader on the governing and M&A documents;
+  every prior session's raw transcript read; the README re-read before saving; maintenance hygiene checks
+  (operative copies in `_Superseded`, wrong boilerplate, temporary files) and a confirmed cadence; the sent
+  email saved to the Privileged folder; new destinations for third-party productions and related-party
+  notes; deletion limited to the two cases Gate 5 allows.
+
 ## 0.13.2 (2026-11-18)
 
 - Scout tells the user when a newer plugin is out (service 0.9.2), with the steps that work: Check for
