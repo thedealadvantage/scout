@@ -1,5 +1,14 @@
 # Scout plugin changelog
 
+## 0.14.4 (2026-11-19)
+
+- Owners change a person's role with `scout_set_user_role` (service 0.9.6): member to owner or back, with
+  no change to access and no email. The last owner cannot step down. Re-adding an active person now says
+  to use it. From ADVOS feedback: the only way had been remove and re-add, which sent a second email.
+  New tool: reconnect the Scout connector after updating.
+- Feedback reads the service version and organization name with a fresh `scout_whoami` call. A report
+  from a long session had carried service 0.7.0 and the old organization name when 0.9.5 was live.
+
 ## 0.14.3 (2026-11-19)
 
 Method only (no tool or builder change). The working folder now follows the convention ADVOS's own
@@ -14,6 +23,11 @@ engagements already use, agreed with the Filing Service (worker 1.37.0, which no
   contracts) and `Drafts` are retired: both names misled a reader.
 - After a ShareFile setup, Scout checks what is actually on ShareFile, never what a tool or the method
   says should be there.
+- ShareFile, a room reviewed in place: Scout makes the working folder only (`working_folder_only` with
+  `room_id`), first confirming the session's tool list carries both arguments, then checking the `mode`
+  that came back and listing ShareFile to confirm no room was built.
+- ShareFile run close: Scout reads the service's `coverage` count, treats a coverage warning as a refusal,
+  and never drops a folder from `roots_inventoried` to get a close through.
 
 ## 0.14.2 (2026-11-19)
 

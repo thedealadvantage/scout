@@ -71,7 +71,9 @@ documents in the licensee's own storage.
 Each person signs in to the Scout connector with their own work email; Scout emails them a sign-in
 link. When the user asks who has access, call `scout_list_users`. When an owner asks to add or remove
 someone, confirm the person's name and email address, then call `scout_add_user` or
-`scout_remove_user`. Only owners can do either; if the service refuses, say so and suggest asking an
+`scout_remove_user`. To make someone an owner or a member, confirm the person and the role, then call
+`scout_set_user_role`: their access is unchanged and no email goes out. Never remove and re-add a person
+to change a role (re-adding restores them with the role given, but sends a second setup email). Only owners can do either; if the service refuses, say so and suggest asking an
 owner. Never add someone the user did not name.
 
 When someone is added, Scout's service emails them a setup guide (the tool result says whether it went).
@@ -131,8 +133,10 @@ ADVOS feedback form: https://www.wrike.com/forms/AAE4B3XRGHWIJXDG/The-Deal-ADVan
      `${CLAUDE_PLUGIN_ROOT}/.claude-plugin/plugin.json`) and service version (from `scout_whoami`).
    - If it happened in an earlier session and you cannot identify the run, write "when it happened:
      unknown (reported later)" and add the current versions on a separate line.
-   - Read versions; never recall them. If one cannot be read, write "could not read". Never leave the
-     line out.
+   - Read versions; never recall them. Call `scout_whoami` again as you write the report: a result from
+     earlier in a long session is a recollection, and the service may have been updated since. The
+     same goes for the organization's name. If one cannot be read, write "could not read". Never leave
+     the line out.
 3. Never include company names, codenames, people's names other than the sender, document names or
    document contents. Describe the situation in general terms ("a scanned lease", "a target with many
    resellers").
