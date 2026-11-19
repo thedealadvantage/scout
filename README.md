@@ -7,7 +7,7 @@ ADVantage (ADVOS Pro LLC). Scout works only with a Scout license; the plugin alo
 **Sync automatically** so Scout updates itself. Then open the plugin's Connectors tab and click Connect.
 
 - Scout License Agreement: https://thedealadvantage.com/scout-license.pdf
-- Scout privacy and subprocessors: https://thedealadvantage.com/scout-privacy
+- Scout privacy, security and subprocessors: https://thedealadvantage.com/scout-privacy
 - Questions: info@thedealadvantage.com
 
 Current version: 0.14.5. Copyright ADVOS Pro LLC. All rights reserved. The files here are provided only
