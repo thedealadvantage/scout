@@ -1,5 +1,14 @@
 # Scout plugin changelog
 
+## 0.14.1 (2026-11-19)
+
+- If a tool the skill names is missing, Scout says Claude still has the connector's old tool list and
+  gives the fix (disconnect and reconnect the Scout connector, set any new tool to Always allow, then
+  ask again in the same conversation), instead of answering from the older tools. Found when two
+  conversations after 0.14.0, including a new one, said the service had no run history, though
+  `scout_list_runs` was live: Claude keeps a connector's tool list until it is reconnected. Proven on
+  19 Nov 2026: after a reconnect, the same conversation listed Green Fields' runs.
+
 ## 0.14.0 (2026-11-19)
 
 Builder 3.8.0, service 0.9.3 and method updates from the review against ADVOS's own TDA practice.

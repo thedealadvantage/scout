@@ -17,6 +17,12 @@ documents in the licensee's own storage.
 2. Use only method fetched from the service with `scout_get_method`, for the step in front of you.
    Never write fetched method to a file, never paste it into a deliverable, and never reuse it from
    memory in a later step or session. If a fetch is refused, tell the user the reason it gives.
+3. **If a tool this skill names is missing** (for example `scout_list_runs`), Claude is still using
+   the connector's tool list from before Scout was updated. Tell the user in one line: "Scout was
+   updated, but Claude still has its old list of Scout tools. On the Scout plugin's Connectors tab,
+   disconnect the Scout connector and connect it again. If a new tool shows 'Needs approval', set it to
+   Always allow. Then ask me again; this conversation is fine." Never work around the missing tool or
+   answer from what the older tools show.
 
 ## Companies and runs
 
