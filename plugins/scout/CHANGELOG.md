@@ -1,5 +1,20 @@
 # Scout plugin changelog
 
+## 0.14.3 (2026-11-19)
+
+Method only (no tool or builder change). The working folder now follows the convention ADVOS's own
+engagements already use, agreed with the Filing Service (worker 1.37.0, which now creates only
+`Working Files`):
+
+- Top of the working folder, for people: the README, the internal workbooks, and
+  `Client Deliverables - Drafts for Review`.
+- Everything machine-made under `Working Files`: `Scout Log.csv`, the build brand file, `Extracted Text`,
+  `Records` (the JSON records, with `prior` and `snapshots`), `Intake`, `Email Drafts`.
+- Scout creates each folder the first time it writes to it. `Contracts` (which held a JSON record, not
+  contracts) and `Drafts` are retired: both names misled a reader.
+- After a ShareFile setup, Scout checks what is actually on ShareFile, never what a tool or the method
+  says should be there.
+
 ## 0.14.2 (2026-11-19)
 
 - "What can you do?" now ends with the Scout at a glance one-pager (service 0.9.5, `/guide`).
